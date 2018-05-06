@@ -9,9 +9,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Android.Runtime.ResourceDesignerAttribute("Study3XFBA.Droid.Resource", IsApplication=true)]
+[assembly: global::Android.Runtime.ResourceDesignerAttribute("Phoneword.Droid.Resource", IsApplication=true)]
 
-namespace Study3XFBA.Droid
+namespace Phoneword.Droid
 {
 	
 	
@@ -26,7 +26,7 @@ namespace Study3XFBA.Droid
 		
 		public static void UpdateIdValues()
 		{
-			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::Study3XFBA.Droid.Resource.Attribute.actionBarSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::Phoneword.Droid.Resource.Attribute.actionBarSize;
 		}
 		
 		public partial class Animation

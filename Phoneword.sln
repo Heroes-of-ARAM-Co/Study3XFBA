@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2037
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Study3XFBA.Android", "Study3XFBA\Study3XFBA.Android\Study3XFBA.Android.csproj", "{A234A0BC-76A4-4EF4-B28A-999106555232}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Phoneword.Android", "Study3XFBA\Study3XFBA.Android\Phoneword.Android.csproj", "{A234A0BC-76A4-4EF4-B28A-999106555232}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Study3XFBA.iOS", "Study3XFBA\Study3XFBA.iOS\Study3XFBA.iOS.csproj", "{2BF702A9-305D-4FAA-96B3-6B376C1D4825}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Phoneword.iOS", "Study3XFBA\Study3XFBA.iOS\Phoneword.iOS.csproj", "{2BF702A9-305D-4FAA-96B3-6B376C1D4825}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Study3XFBA.UWP", "Study3XFBA\Study3XFBA.UWP\Study3XFBA.UWP.csproj", "{4947BE3A-95E8-4DE4-91E8-2D39C2B90B83}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Phoneword.UWP", "Study3XFBA\Study3XFBA.UWP\Phoneword.UWP.csproj", "{4947BE3A-95E8-4DE4-91E8-2D39C2B90B83}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Study3XFBA", "Study3XFBA\Study3XFBA\Study3XFBA.csproj", "{5AA0754E-248F-41F1-8B3B-B584A1F910E9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Phoneword", "Study3XFBA\Study3XFBA\Phoneword.csproj", "{5AA0754E-248F-41F1-8B3B-B584A1F910E9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

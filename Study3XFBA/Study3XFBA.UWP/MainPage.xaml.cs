@@ -13,7 +13,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-namespace Study3XFBA.UWP
+namespace Phoneword.UWP
 {
     public sealed partial class MainPage
     {
@@ -21,7 +21,7 @@ namespace Study3XFBA.UWP
         {
             this.InitializeComponent();
 
-            LoadApplication(new Study3XFBA.App());
+            LoadApplication(new Phoneword.App());
         }
     }
 }

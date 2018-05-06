@@ -1,5 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.companyname.Study3XFBA">
-	<uses-sdk android:minSdkVersion="15" />
-	<application android:label="Study3XFBA.Android"></application>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.companyname.Phoneword" android:installLocation="auto">
+	<uses-sdk android:minSdkVersion="24" android:targetSdkVersion="24" />
+	<uses-permission android:name="android.permission.CALL_PHONE" />
+	<application android:label="Phoneword.Android"></application>
 </manifest>

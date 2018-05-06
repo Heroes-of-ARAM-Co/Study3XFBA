@@ -92,6 +92,7 @@
     <Compile Include="AppDelegate.cs" />
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />
+    <Compile Include="PhoneDialer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -123,9 +124,9 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\Study3XFBA\Study3XFBA.csproj">
-      <Project>{DBE57220-B2C3-4D52-87C7-7399A4C8AF5B}</Project>
-      <Name>Study3XFBA</Name>
+    <ProjectReference Include="..\Study3XFBA\Phoneword.csproj">
+      <Project>{5AA0754E-248F-41F1-8B3B-B584A1F910E9}</Project>
+      <Name>Phoneword</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>
