@@ -10,8 +10,9 @@
     </ContentPage.Padding>
     <StackLayout>
         <Label Text="Enter a Phoneword:" />
-        <Entry x:Name="phoneNumberText" Text="1-855-XAMARIN" />
-        <Button x:Name="translateButon" Text="Translate" Clicked="OnTranslate" />
-        <Button x:Name="callButton" Text="Call" IsEnabled="false" Clicked="OnCall" />
+        <Editor x:Name="phoneNumberText" Text="Test wejscia do pliku" />
+        <Button x:Name="Zapis" Text="Translate" Clicked="OnTranslate" />
+        <Button x:Name="Odczyt" Text="Call"  Clicked="OnCall" />
+        <Editor x:Name="Output" Text="Output" />
     </StackLayout>
 </ContentPage>
