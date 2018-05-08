@@ -12,8 +12,32 @@ namespace Study3XFBA
             InitializeComponent();
         }
 
+        void SavingButton(object sender, EventArgs e)
+        {
+           // var saveButton = new Button { Text = "Save" };
+           // saveButton.Clicked += (sender, e) => {
+                DependencyService.Get<ISaveAndLoad>().SaveText("temp.txt", phoneNumberText.Text);
+           // };
+        }
+
+        void OnMieszko (object sender, EventArgs e)
+        {
+            if (Mieszko.IsToggled) phoneNumberText.Text = "zły Mieszko";
+            else phoneNumberText.Text = "dobry Mieszko";
+        }
+
+        void LoadingButton(object sender, EventArgs e)
+        {
+           // var loadButton = new Button { Text = "Load" };
+           // loadButton.Clicked += (sender, e) => {
+                poleOdczytu.Text = DependencyService.Get<ISaveAndLoad>().LoadText("temp.txt");
+            //};
+        }
+
         void OnTranslate(object sender, EventArgs e)
         {
+           // var obj = new FileExcercise();
+           // phoneNumberText.Text = obj.FileExcerciseM();
             translatedNumber = Core.PhonewordTranslator.ToNumber(phoneNumberText.Text);
             if (!string.IsNullOrWhiteSpace(translatedNumber))
             {
@@ -25,6 +49,7 @@ namespace Study3XFBA
                 callButton.IsEnabled = false;
                 callButton.Text = "Call";
             }
+
         }
 
         async void OnCall(object sender, EventArgs e)
