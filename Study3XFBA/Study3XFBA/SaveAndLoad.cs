@@ -1,7 +1,10 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
+using System.Xml.Linq;
+using System.Xml.Serialization;
 using Xamarin.Forms;
 
 [assembly: Dependency(typeof(Study3XFBA.SaveAndLoad))]
@@ -9,25 +12,31 @@ namespace Study3XFBA
 {
     public interface ISaveAndLoad
     {
-        void SaveText(string filename, string text);
-        string LoadText(string filename);
+        void Save(string filename, JsonModel text);
+        JsonModel Load(string filename);
     }
   
 
         public class SaveAndLoad : ISaveAndLoad
         {
-            public void SaveText(string filename, string text)
+            public void Save(string filename, JsonModel jsonModel)
             {
                 var documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
                 var filePath = Path.Combine(documentsPath, filename);
-                System.IO.File.WriteAllText(filePath, text);
+                var jsonInString =JsonConvert.SerializeObject(jsonModel).ToString();
+                System.IO.File.WriteAllText(filePath, jsonInString);
             }
-            public string LoadText(string filename)
+            public JsonModel Load(string filename)
             {
-                var documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
-                var filePath = Path.Combine(documentsPath, filename);
-                return System.IO.File.ReadAllText(filePath);
-            }
+              var documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
+              var filePath = Path.Combine(documentsPath, filename);
+              var text = System.IO.File.ReadAllText(filePath);
+              var textInJson =  JsonConvert.DeserializeObject<JsonModel>(text);
+              return textInJson;
         }
+        }
+
+
+ 
     
 }

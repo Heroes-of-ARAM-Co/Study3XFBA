@@ -9,10 +9,18 @@
         </OnPlatform>
     </ContentPage.Padding>
     <StackLayout>
-        <Label Text="Enter a Phoneword:" />
-        <Editor x:Name="phoneNumberText" Text="Test wejscia do pliku" />
+        <Label Text="Fill the form:" />
+        <Editor x:Name="Title" Text="Title" />
+        <Editor x:Name="Id" Text="Id" />
+        <Editor x:Name="Property" Text="Property" />
         <Button x:Name="Zapis" Text="Translate" Clicked="OnTranslate" />
         <Button x:Name="Odczyt" Text="Call"  Clicked="OnCall" />
         <Editor x:Name="Output" Text="Output" />
+
+        <Label Text="Reading Result:" />
+        <Editor x:Name="Title_read" Text="Title" />
+        <Editor x:Name="Id_read" Text="Id" />
+        <Editor x:Name="Property_read" Text="Property" />
+      
     </StackLayout>
 </ContentPage>
