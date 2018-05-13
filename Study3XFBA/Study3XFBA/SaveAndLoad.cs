@@ -8,7 +8,7 @@ using Xamarin.Forms;
 [assembly: Dependency(typeof(Study3XFBA.SaveAndLoad))]
 namespace Study3XFBA
 {
-
+    
     public interface ISaveAndLoad
     {
         void Save(string filename, Json_Model json_Model);
