@@ -6,7 +6,7 @@ namespace Study3XFBA
 {
     public class Json_Model
     {
-        public string Title { get; set; }
+        public string Title {            get; set;        }
         public int Id { get; set; }
         public List<SampleNode> ListOfSampleNodes { get; set; }
     }
