@@ -9,7 +9,7 @@ using Uri = Android.Net.Uri;
 [assembly: Dependency(typeof(PhoneDialer))]
 namespace Study3XFBA.Droid
 {
-    public class PhoneDialer : IDialer
+    public class PhoneDialer 
     {
         public bool Dial(string number)
         {

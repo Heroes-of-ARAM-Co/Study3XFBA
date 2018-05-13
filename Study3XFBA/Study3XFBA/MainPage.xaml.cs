@@ -21,9 +21,9 @@ namespace Study3XFBA
 
         void OnTranslate(object sender, EventArgs e)
         {
-            form.Title = Title.Text;
-            form.Id = Int32.Parse(Id.Text);
-            formProperty.Properties = Property.Text;
+            form.Title = Title.Text.ToString();
+            form.Id = Id.Text.ToString();
+            formProperty.Properties = Property.Text.ToString();
             form.ListOfSampleNodes = new System.Collections.Generic.List<SampleNode>();
             form.ListOfSampleNodes.Add(formProperty);
             DependencyService.Get<ISaveAndLoad>().Save("temp.txt", form);
@@ -34,7 +34,7 @@ namespace Study3XFBA
         {
             form_read = DependencyService.Get<ISaveAndLoad>().Load("temp.txt");
             Title_read.Text = form_read.Title;
-            Id_read.Text = form_read.Id.ToString();
+            Id_read.Text = form_read.Id;
 
 
            

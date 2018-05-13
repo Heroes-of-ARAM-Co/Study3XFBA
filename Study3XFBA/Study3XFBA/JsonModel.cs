@@ -7,7 +7,7 @@ namespace Study3XFBA
     public class JsonModel
     {
         public string Title { get; set; }
-        public int Id { get; set; }
+        public string Id { get; set; }
         public List<SampleNode> ListOfSampleNodes {get;set;}
     }
     public class SampleNode
