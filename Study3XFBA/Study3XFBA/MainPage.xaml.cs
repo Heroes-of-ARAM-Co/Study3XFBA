@@ -6,17 +6,25 @@ namespace Study3XFBA
     public partial class MainPage : ContentPage
     {
         string translatedNumber;
+        static Json_Model mockModel;
+
 
         public MainPage()
         {
             InitializeComponent();
         }
+        void ReadTitle(object sender, EventArgs e)
+        {
+            Json_Model tempModel = DependencyService.Get<ISaveAndLoad>().Load("temp.txt");
+            ModelTitleButton.Text = tempModel.Title;
+        }
 
         void SavingButton(object sender, EventArgs e)
         {
-           // var saveButton = new Button { Text = "Save" };
-           // saveButton.Clicked += (sender, e) => {
-                DependencyService.Get<ISaveAndLoad>().SaveText("temp.txt", phoneNumberText.Text);
+            // var saveButton = new Button { Text = "Save" };
+            // saveButton.Clicked += (sender, e) => {
+            mockModel = new Json_Model();
+                DependencyService.Get<ISaveAndLoad>().Save("temp.txt", mockModel);
            // };
         }
 
@@ -30,7 +38,7 @@ namespace Study3XFBA
         {
            // var loadButton = new Button { Text = "Load" };
            // loadButton.Clicked += (sender, e) => {
-                poleOdczytu.Text = DependencyService.Get<ISaveAndLoad>().LoadText("temp.txt");
+//poleOdczytu.Text = DependencyService.Get<ISaveAndLoad>().Load("temp.txt");
             //};
         }
 

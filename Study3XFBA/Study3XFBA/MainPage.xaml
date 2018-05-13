@@ -15,5 +15,6 @@
         <Button x:Name="callButton" Text="Odczyt" IsEnabled="True" Clicked="LoadingButton" />
         <Entry x:Name="poleOdczytu" Text="Tu bendzie otczyt" />
         <Switch x:Name="Mieszko" IsToggled="False" Toggled="OnMieszko" />
+        <Button x:Name="ModelTitleButton" Text="Read Title" Clicked="ReadTitle" />
     </StackLayout>
 </ContentPage>
